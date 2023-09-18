@@ -1,0 +1,547 @@
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.6.0
+model_uuid: 04d7ecc96bab446aa0693f1159fb85cc
+signature:
+  inputs: '[{"type": "integer", "name": "CODE_GENDER"}, {"type": "integer", "name":
+    "FLAG_OWN_CAR"}, {"type": "integer", "name": "FLAG_OWN_REALTY"}, {"type": "integer",
+    "name": "CNT_CHILDREN"}, {"type": "double", "name": "AMT_INCOME_TOTAL"}, {"type":
+    "double", "name": "AMT_CREDIT"}, {"type": "double", "name": "AMT_ANNUITY"}, {"type":
+    "double", "name": "AMT_GOODS_PRICE"}, {"type": "double", "name": "REGION_POPULATION_RELATIVE"},
+    {"type": "integer", "name": "DAYS_BIRTH"}, {"type": "double", "name": "DAYS_EMPLOYED"},
+    {"type": "double", "name": "DAYS_REGISTRATION"}, {"type": "integer", "name": "DAYS_ID_PUBLISH"},
+    {"type": "double", "name": "OWN_CAR_AGE"}, {"type": "integer", "name": "FLAG_MOBIL"},
+    {"type": "integer", "name": "FLAG_EMP_PHONE"}, {"type": "integer", "name": "FLAG_WORK_PHONE"},
+    {"type": "integer", "name": "FLAG_CONT_MOBILE"}, {"type": "integer", "name": "FLAG_PHONE"},
+    {"type": "integer", "name": "FLAG_EMAIL"}, {"type": "double", "name": "CNT_FAM_MEMBERS"},
+    {"type": "integer", "name": "REGION_RATING_CLIENT"}, {"type": "integer", "name":
+    "REGION_RATING_CLIENT_W_CITY"}, {"type": "integer", "name": "HOUR_APPR_PROCESS_START"},
+    {"type": "integer", "name": "REG_REGION_NOT_LIVE_REGION"}, {"type": "integer",
+    "name": "REG_REGION_NOT_WORK_REGION"}, {"type": "integer", "name": "LIVE_REGION_NOT_WORK_REGION"},
+    {"type": "integer", "name": "REG_CITY_NOT_LIVE_CITY"}, {"type": "integer", "name":
+    "REG_CITY_NOT_WORK_CITY"}, {"type": "integer", "name": "LIVE_CITY_NOT_WORK_CITY"},
+    {"type": "double", "name": "EXT_SOURCE_1"}, {"type": "double", "name": "EXT_SOURCE_2"},
+    {"type": "double", "name": "EXT_SOURCE_3"}, {"type": "double", "name": "APARTMENTS_AVG"},
+    {"type": "double", "name": "BASEMENTAREA_AVG"}, {"type": "double", "name": "YEARS_BEGINEXPLUATATION_AVG"},
+    {"type": "double", "name": "YEARS_BUILD_AVG"}, {"type": "double", "name": "COMMONAREA_AVG"},
+    {"type": "double", "name": "ELEVATORS_AVG"}, {"type": "double", "name": "ENTRANCES_AVG"},
+    {"type": "double", "name": "FLOORSMAX_AVG"}, {"type": "double", "name": "FLOORSMIN_AVG"},
+    {"type": "double", "name": "LANDAREA_AVG"}, {"type": "double", "name": "LIVINGAPARTMENTS_AVG"},
+    {"type": "double", "name": "LIVINGAREA_AVG"}, {"type": "double", "name": "NONLIVINGAPARTMENTS_AVG"},
+    {"type": "double", "name": "NONLIVINGAREA_AVG"}, {"type": "double", "name": "APARTMENTS_MODE"},
+    {"type": "double", "name": "BASEMENTAREA_MODE"}, {"type": "double", "name": "YEARS_BEGINEXPLUATATION_MODE"},
+    {"type": "double", "name": "YEARS_BUILD_MODE"}, {"type": "double", "name": "COMMONAREA_MODE"},
+    {"type": "double", "name": "ELEVATORS_MODE"}, {"type": "double", "name": "ENTRANCES_MODE"},
+    {"type": "double", "name": "FLOORSMAX_MODE"}, {"type": "double", "name": "FLOORSMIN_MODE"},
+    {"type": "double", "name": "LANDAREA_MODE"}, {"type": "double", "name": "LIVINGAPARTMENTS_MODE"},
+    {"type": "double", "name": "LIVINGAREA_MODE"}, {"type": "double", "name": "NONLIVINGAPARTMENTS_MODE"},
+    {"type": "double", "name": "NONLIVINGAREA_MODE"}, {"type": "double", "name": "APARTMENTS_MEDI"},
+    {"type": "double", "name": "BASEMENTAREA_MEDI"}, {"type": "double", "name": "YEARS_BEGINEXPLUATATION_MEDI"},
+    {"type": "double", "name": "YEARS_BUILD_MEDI"}, {"type": "double", "name": "COMMONAREA_MEDI"},
+    {"type": "double", "name": "ELEVATORS_MEDI"}, {"type": "double", "name": "ENTRANCES_MEDI"},
+    {"type": "double", "name": "FLOORSMAX_MEDI"}, {"type": "double", "name": "FLOORSMIN_MEDI"},
+    {"type": "double", "name": "LANDAREA_MEDI"}, {"type": "double", "name": "LIVINGAPARTMENTS_MEDI"},
+    {"type": "double", "name": "LIVINGAREA_MEDI"}, {"type": "double", "name": "NONLIVINGAPARTMENTS_MEDI"},
+    {"type": "double", "name": "NONLIVINGAREA_MEDI"}, {"type": "double", "name": "TOTALAREA_MODE"},
+    {"type": "double", "name": "OBS_30_CNT_SOCIAL_CIRCLE"}, {"type": "double", "name":
+    "DEF_30_CNT_SOCIAL_CIRCLE"}, {"type": "double", "name": "OBS_60_CNT_SOCIAL_CIRCLE"},
+    {"type": "double", "name": "DEF_60_CNT_SOCIAL_CIRCLE"}, {"type": "double", "name":
+    "DAYS_LAST_PHONE_CHANGE"}, {"type": "integer", "name": "FLAG_DOCUMENT_2"}, {"type":
+    "integer", "name": "FLAG_DOCUMENT_3"}, {"type": "integer", "name": "FLAG_DOCUMENT_4"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_5"}, {"type": "integer", "name": "FLAG_DOCUMENT_6"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_7"}, {"type": "integer", "name": "FLAG_DOCUMENT_8"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_9"}, {"type": "integer", "name": "FLAG_DOCUMENT_10"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_11"}, {"type": "integer", "name": "FLAG_DOCUMENT_12"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_13"}, {"type": "integer", "name": "FLAG_DOCUMENT_14"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_15"}, {"type": "integer", "name": "FLAG_DOCUMENT_16"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_17"}, {"type": "integer", "name": "FLAG_DOCUMENT_18"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_19"}, {"type": "integer", "name": "FLAG_DOCUMENT_20"},
+    {"type": "integer", "name": "FLAG_DOCUMENT_21"}, {"type": "double", "name": "AMT_REQ_CREDIT_BUREAU_HOUR"},
+    {"type": "double", "name": "AMT_REQ_CREDIT_BUREAU_DAY"}, {"type": "double", "name":
+    "AMT_REQ_CREDIT_BUREAU_WEEK"}, {"type": "double", "name": "AMT_REQ_CREDIT_BUREAU_MON"},
+    {"type": "double", "name": "AMT_REQ_CREDIT_BUREAU_QRT"}, {"type": "double", "name":
+    "AMT_REQ_CREDIT_BUREAU_YEAR"}, {"type": "integer", "name": "NAME_CONTRACT_TYPE_Cash
+    loans"}, {"type": "integer", "name": "NAME_CONTRACT_TYPE_Revolving loans"}, {"type":
+    "integer", "name": "NAME_TYPE_SUITE_Children"}, {"type": "integer", "name": "NAME_TYPE_SUITE_Family"},
+    {"type": "integer", "name": "NAME_TYPE_SUITE_Group of people"}, {"type": "integer",
+    "name": "NAME_TYPE_SUITE_Other_A"}, {"type": "integer", "name": "NAME_TYPE_SUITE_Other_B"},
+    {"type": "integer", "name": "NAME_TYPE_SUITE_Spouse, partner"}, {"type": "integer",
+    "name": "NAME_TYPE_SUITE_Unaccompanied"}, {"type": "integer", "name": "NAME_INCOME_TYPE_Businessman"},
+    {"type": "integer", "name": "NAME_INCOME_TYPE_Commercial associate"}, {"type":
+    "integer", "name": "NAME_INCOME_TYPE_Maternity leave"}, {"type": "integer", "name":
+    "NAME_INCOME_TYPE_Pensioner"}, {"type": "integer", "name": "NAME_INCOME_TYPE_State
+    servant"}, {"type": "integer", "name": "NAME_INCOME_TYPE_Student"}, {"type": "integer",
+    "name": "NAME_INCOME_TYPE_Unemployed"}, {"type": "integer", "name": "NAME_INCOME_TYPE_Working"},
+    {"type": "integer", "name": "NAME_EDUCATION_TYPE_Academic degree"}, {"type": "integer",
+    "name": "NAME_EDUCATION_TYPE_Higher education"}, {"type": "integer", "name": "NAME_EDUCATION_TYPE_Incomplete
+    higher"}, {"type": "integer", "name": "NAME_EDUCATION_TYPE_Lower secondary"},
+    {"type": "integer", "name": "NAME_EDUCATION_TYPE_Secondary / secondary special"},
+    {"type": "integer", "name": "NAME_FAMILY_STATUS_Civil marriage"}, {"type": "integer",
+    "name": "NAME_FAMILY_STATUS_Married"}, {"type": "integer", "name": "NAME_FAMILY_STATUS_Separated"},
+    {"type": "integer", "name": "NAME_FAMILY_STATUS_Single / not married"}, {"type":
+    "integer", "name": "NAME_FAMILY_STATUS_Unknown"}, {"type": "integer", "name":
+    "NAME_FAMILY_STATUS_Widow"}, {"type": "integer", "name": "NAME_HOUSING_TYPE_Co-op
+    apartment"}, {"type": "integer", "name": "NAME_HOUSING_TYPE_House / apartment"},
+    {"type": "integer", "name": "NAME_HOUSING_TYPE_Municipal apartment"}, {"type":
+    "integer", "name": "NAME_HOUSING_TYPE_Office apartment"}, {"type": "integer",
+    "name": "NAME_HOUSING_TYPE_Rented apartment"}, {"type": "integer", "name": "NAME_HOUSING_TYPE_With
+    parents"}, {"type": "integer", "name": "OCCUPATION_TYPE_Accountants"}, {"type":
+    "integer", "name": "OCCUPATION_TYPE_Cleaning staff"}, {"type": "integer", "name":
+    "OCCUPATION_TYPE_Cooking staff"}, {"type": "integer", "name": "OCCUPATION_TYPE_Core
+    staff"}, {"type": "integer", "name": "OCCUPATION_TYPE_Drivers"}, {"type": "integer",
+    "name": "OCCUPATION_TYPE_HR staff"}, {"type": "integer", "name": "OCCUPATION_TYPE_High
+    skill tech staff"}, {"type": "integer", "name": "OCCUPATION_TYPE_IT staff"}, {"type":
+    "integer", "name": "OCCUPATION_TYPE_Laborers"}, {"type": "integer", "name": "OCCUPATION_TYPE_Low-skill
+    Laborers"}, {"type": "integer", "name": "OCCUPATION_TYPE_Managers"}, {"type":
+    "integer", "name": "OCCUPATION_TYPE_Medicine staff"}, {"type": "integer", "name":
+    "OCCUPATION_TYPE_Private service staff"}, {"type": "integer", "name": "OCCUPATION_TYPE_Realty
+    agents"}, {"type": "integer", "name": "OCCUPATION_TYPE_Sales staff"}, {"type":
+    "integer", "name": "OCCUPATION_TYPE_Secretaries"}, {"type": "integer", "name":
+    "OCCUPATION_TYPE_Security staff"}, {"type": "integer", "name": "OCCUPATION_TYPE_Waiters/barmen
+    staff"}, {"type": "integer", "name": "WEEKDAY_APPR_PROCESS_START_FRIDAY"}, {"type":
+    "integer", "name": "WEEKDAY_APPR_PROCESS_START_MONDAY"}, {"type": "integer", "name":
+    "WEEKDAY_APPR_PROCESS_START_SATURDAY"}, {"type": "integer", "name": "WEEKDAY_APPR_PROCESS_START_SUNDAY"},
+    {"type": "integer", "name": "WEEKDAY_APPR_PROCESS_START_THURSDAY"}, {"type": "integer",
+    "name": "WEEKDAY_APPR_PROCESS_START_TUESDAY"}, {"type": "integer", "name": "WEEKDAY_APPR_PROCESS_START_WEDNESDAY"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Advertising"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Agriculture"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Bank"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Business Entity Type 1"}, {"type":
+    "integer", "name": "ORGANIZATION_TYPE_Business Entity Type 2"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Business Entity Type 3"}, {"type": "integer", "name":
+    "ORGANIZATION_TYPE_Cleaning"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Construction"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Culture"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Electricity"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Emergency"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Government"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Hotel"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Housing"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Industry: type 1"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Industry: type 10"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Industry:
+    type 11"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Industry: type 12"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Industry: type 13"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Industry: type 2"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Industry:
+    type 3"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Industry: type 4"}, {"type":
+    "integer", "name": "ORGANIZATION_TYPE_Industry: type 5"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Industry: type 6"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Industry:
+    type 7"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Industry: type 8"}, {"type":
+    "integer", "name": "ORGANIZATION_TYPE_Industry: type 9"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Insurance"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Kindergarten"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Legal Services"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Medicine"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Military"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Mobile"}, {"type": "integer", "name":
+    "ORGANIZATION_TYPE_Other"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Police"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Postal"}, {"type": "integer", "name":
+    "ORGANIZATION_TYPE_Realtor"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Religion"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Restaurant"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_School"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Security"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Security Ministries"}, {"type":
+    "integer", "name": "ORGANIZATION_TYPE_Self-employed"}, {"type": "integer", "name":
+    "ORGANIZATION_TYPE_Services"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Telecom"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Trade: type 1"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Trade: type 2"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Trade:
+    type 3"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Trade: type 4"}, {"type":
+    "integer", "name": "ORGANIZATION_TYPE_Trade: type 5"}, {"type": "integer", "name":
+    "ORGANIZATION_TYPE_Trade: type 6"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Trade:
+    type 7"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Transport: type 1"},
+    {"type": "integer", "name": "ORGANIZATION_TYPE_Transport: type 2"}, {"type": "integer",
+    "name": "ORGANIZATION_TYPE_Transport: type 3"}, {"type": "integer", "name": "ORGANIZATION_TYPE_Transport:
+    type 4"}, {"type": "integer", "name": "ORGANIZATION_TYPE_University"}, {"type":
+    "integer", "name": "ORGANIZATION_TYPE_XNA"}, {"type": "integer", "name": "FONDKAPREMONT_MODE_not
+    specified"}, {"type": "integer", "name": "FONDKAPREMONT_MODE_org spec account"},
+    {"type": "integer", "name": "FONDKAPREMONT_MODE_reg oper account"}, {"type": "integer",
+    "name": "FONDKAPREMONT_MODE_reg oper spec account"}, {"type": "integer", "name":
+    "HOUSETYPE_MODE_block of flats"}, {"type": "integer", "name": "HOUSETYPE_MODE_specific
+    housing"}, {"type": "integer", "name": "HOUSETYPE_MODE_terraced house"}, {"type":
+    "integer", "name": "WALLSMATERIAL_MODE_Block"}, {"type": "integer", "name": "WALLSMATERIAL_MODE_Mixed"},
+    {"type": "integer", "name": "WALLSMATERIAL_MODE_Monolithic"}, {"type": "integer",
+    "name": "WALLSMATERIAL_MODE_Others"}, {"type": "integer", "name": "WALLSMATERIAL_MODE_Panel"},
+    {"type": "integer", "name": "WALLSMATERIAL_MODE_Stone, brick"}, {"type": "integer",
+    "name": "WALLSMATERIAL_MODE_Wooden"}, {"type": "integer", "name": "EMERGENCYSTATE_MODE_No"},
+    {"type": "integer", "name": "EMERGENCYSTATE_MODE_Yes"}, {"type": "double", "name":
+    "DAYS_EMPLOYED_PERC"}, {"type": "double", "name": "INCOME_CREDIT_PERC"}, {"type":
+    "double", "name": "INCOME_PER_PERSON"}, {"type": "double", "name": "ANNUITY_INCOME_PERC"},
+    {"type": "double", "name": "PAYMENT_RATE"}, {"type": "double", "name": "BURO_DAYS_CREDIT_MIN"},
+    {"type": "double", "name": "BURO_DAYS_CREDIT_MAX"}, {"type": "double", "name":
+    "BURO_DAYS_CREDIT_MEAN"}, {"type": "double", "name": "BURO_DAYS_CREDIT_VAR"},
+    {"type": "double", "name": "BURO_DAYS_CREDIT_ENDDATE_MIN"}, {"type": "double",
+    "name": "BURO_DAYS_CREDIT_ENDDATE_MAX"}, {"type": "double", "name": "BURO_DAYS_CREDIT_ENDDATE_MEAN"},
+    {"type": "double", "name": "BURO_DAYS_CREDIT_UPDATE_MEAN"}, {"type": "double",
+    "name": "BURO_CREDIT_DAY_OVERDUE_MAX"}, {"type": "double", "name": "BURO_CREDIT_DAY_OVERDUE_MEAN"},
+    {"type": "double", "name": "BURO_AMT_CREDIT_MAX_OVERDUE_MEAN"}, {"type": "double",
+    "name": "BURO_AMT_CREDIT_SUM_MAX"}, {"type": "double", "name": "BURO_AMT_CREDIT_SUM_MEAN"},
+    {"type": "double", "name": "BURO_AMT_CREDIT_SUM_SUM"}, {"type": "double", "name":
+    "BURO_AMT_CREDIT_SUM_DEBT_MAX"}, {"type": "double", "name": "BURO_AMT_CREDIT_SUM_DEBT_MEAN"},
+    {"type": "double", "name": "BURO_AMT_CREDIT_SUM_DEBT_SUM"}, {"type": "double",
+    "name": "BURO_AMT_CREDIT_SUM_OVERDUE_MEAN"}, {"type": "double", "name": "BURO_AMT_CREDIT_SUM_LIMIT_MEAN"},
+    {"type": "double", "name": "BURO_AMT_CREDIT_SUM_LIMIT_SUM"}, {"type": "double",
+    "name": "BURO_AMT_ANNUITY_MAX"}, {"type": "double", "name": "BURO_AMT_ANNUITY_MEAN"},
+    {"type": "double", "name": "BURO_CNT_CREDIT_PROLONG_SUM"}, {"type": "double",
+    "name": "BURO_MONTHS_BALANCE_MIN_MIN"}, {"type": "double", "name": "BURO_MONTHS_BALANCE_MAX_MAX"},
+    {"type": "double", "name": "BURO_MONTHS_BALANCE_SIZE_MEAN"}, {"type": "double",
+    "name": "BURO_MONTHS_BALANCE_SIZE_SUM"}, {"type": "double", "name": "BURO_CREDIT_ACTIVE_Active_MEAN"},
+    {"type": "double", "name": "BURO_CREDIT_ACTIVE_Bad debt_MEAN"}, {"type": "double",
+    "name": "BURO_CREDIT_ACTIVE_Closed_MEAN"}, {"type": "double", "name": "BURO_CREDIT_ACTIVE_Sold_MEAN"},
+    {"type": "double", "name": "BURO_CREDIT_CURRENCY_currency 1_MEAN"}, {"type": "double",
+    "name": "BURO_CREDIT_CURRENCY_currency 2_MEAN"}, {"type": "double", "name": "BURO_CREDIT_CURRENCY_currency
+    3_MEAN"}, {"type": "double", "name": "BURO_CREDIT_CURRENCY_currency 4_MEAN"},
+    {"type": "double", "name": "BURO_CREDIT_TYPE_Another type of loan_MEAN"}, {"type":
+    "double", "name": "BURO_CREDIT_TYPE_Car loan_MEAN"}, {"type": "double", "name":
+    "BURO_CREDIT_TYPE_Cash loan (non-earmarked)_MEAN"}, {"type": "double", "name":
+    "BURO_CREDIT_TYPE_Consumer credit_MEAN"}, {"type": "double", "name": "BURO_CREDIT_TYPE_Credit
+    card_MEAN"}, {"type": "double", "name": "BURO_CREDIT_TYPE_Interbank credit_MEAN"},
+    {"type": "double", "name": "BURO_CREDIT_TYPE_Loan for business development_MEAN"},
+    {"type": "double", "name": "BURO_CREDIT_TYPE_Loan for purchase of shares (margin
+    lending)_MEAN"}, {"type": "double", "name": "BURO_CREDIT_TYPE_Loan for the purchase
+    of equipment_MEAN"}, {"type": "double", "name": "BURO_CREDIT_TYPE_Loan for working
+    capital replenishment_MEAN"}, {"type": "double", "name": "BURO_CREDIT_TYPE_Microloan_MEAN"},
+    {"type": "double", "name": "BURO_CREDIT_TYPE_Mobile operator loan_MEAN"}, {"type":
+    "double", "name": "BURO_CREDIT_TYPE_Mortgage_MEAN"}, {"type": "double", "name":
+    "BURO_CREDIT_TYPE_Real estate loan_MEAN"}, {"type": "double", "name": "BURO_CREDIT_TYPE_Unknown
+    type of loan_MEAN"}, {"type": "double", "name": "BURO_STATUS_0_MEAN_MEAN"}, {"type":
+    "double", "name": "BURO_STATUS_1_MEAN_MEAN"}, {"type": "double", "name": "BURO_STATUS_2_MEAN_MEAN"},
+    {"type": "double", "name": "BURO_STATUS_3_MEAN_MEAN"}, {"type": "double", "name":
+    "BURO_STATUS_4_MEAN_MEAN"}, {"type": "double", "name": "BURO_STATUS_5_MEAN_MEAN"},
+    {"type": "double", "name": "BURO_STATUS_C_MEAN_MEAN"}, {"type": "double", "name":
+    "BURO_STATUS_X_MEAN_MEAN"}, {"type": "double", "name": "ACTIVE_DAYS_CREDIT_MIN"},
+    {"type": "double", "name": "ACTIVE_DAYS_CREDIT_MAX"}, {"type": "double", "name":
+    "ACTIVE_DAYS_CREDIT_MEAN"}, {"type": "double", "name": "ACTIVE_DAYS_CREDIT_VAR"},
+    {"type": "double", "name": "ACTIVE_DAYS_CREDIT_ENDDATE_MIN"}, {"type": "double",
+    "name": "ACTIVE_DAYS_CREDIT_ENDDATE_MAX"}, {"type": "double", "name": "ACTIVE_DAYS_CREDIT_ENDDATE_MEAN"},
+    {"type": "double", "name": "ACTIVE_DAYS_CREDIT_UPDATE_MEAN"}, {"type": "double",
+    "name": "ACTIVE_CREDIT_DAY_OVERDUE_MAX"}, {"type": "double", "name": "ACTIVE_CREDIT_DAY_OVERDUE_MEAN"},
+    {"type": "double", "name": "ACTIVE_AMT_CREDIT_MAX_OVERDUE_MEAN"}, {"type": "double",
+    "name": "ACTIVE_AMT_CREDIT_SUM_MAX"}, {"type": "double", "name": "ACTIVE_AMT_CREDIT_SUM_MEAN"},
+    {"type": "double", "name": "ACTIVE_AMT_CREDIT_SUM_SUM"}, {"type": "double", "name":
+    "ACTIVE_AMT_CREDIT_SUM_DEBT_MAX"}, {"type": "double", "name": "ACTIVE_AMT_CREDIT_SUM_DEBT_MEAN"},
+    {"type": "double", "name": "ACTIVE_AMT_CREDIT_SUM_DEBT_SUM"}, {"type": "double",
+    "name": "ACTIVE_AMT_CREDIT_SUM_OVERDUE_MEAN"}, {"type": "double", "name": "ACTIVE_AMT_CREDIT_SUM_LIMIT_MEAN"},
+    {"type": "double", "name": "ACTIVE_AMT_CREDIT_SUM_LIMIT_SUM"}, {"type": "double",
+    "name": "ACTIVE_AMT_ANNUITY_MAX"}, {"type": "double", "name": "ACTIVE_AMT_ANNUITY_MEAN"},
+    {"type": "double", "name": "ACTIVE_CNT_CREDIT_PROLONG_SUM"}, {"type": "double",
+    "name": "ACTIVE_MONTHS_BALANCE_MIN_MIN"}, {"type": "double", "name": "ACTIVE_MONTHS_BALANCE_MAX_MAX"},
+    {"type": "double", "name": "ACTIVE_MONTHS_BALANCE_SIZE_MEAN"}, {"type": "double",
+    "name": "ACTIVE_MONTHS_BALANCE_SIZE_SUM"}, {"type": "double", "name": "CLOSED_DAYS_CREDIT_MIN"},
+    {"type": "double", "name": "CLOSED_DAYS_CREDIT_MAX"}, {"type": "double", "name":
+    "CLOSED_DAYS_CREDIT_MEAN"}, {"type": "double", "name": "CLOSED_DAYS_CREDIT_VAR"},
+    {"type": "double", "name": "CLOSED_DAYS_CREDIT_ENDDATE_MIN"}, {"type": "double",
+    "name": "CLOSED_DAYS_CREDIT_ENDDATE_MAX"}, {"type": "double", "name": "CLOSED_DAYS_CREDIT_ENDDATE_MEAN"},
+    {"type": "double", "name": "CLOSED_DAYS_CREDIT_UPDATE_MEAN"}, {"type": "double",
+    "name": "CLOSED_CREDIT_DAY_OVERDUE_MAX"}, {"type": "double", "name": "CLOSED_CREDIT_DAY_OVERDUE_MEAN"},
+    {"type": "double", "name": "CLOSED_AMT_CREDIT_MAX_OVERDUE_MEAN"}, {"type": "double",
+    "name": "CLOSED_AMT_CREDIT_SUM_MAX"}, {"type": "double", "name": "CLOSED_AMT_CREDIT_SUM_MEAN"},
+    {"type": "double", "name": "CLOSED_AMT_CREDIT_SUM_SUM"}, {"type": "double", "name":
+    "CLOSED_AMT_CREDIT_SUM_DEBT_MAX"}, {"type": "double", "name": "CLOSED_AMT_CREDIT_SUM_DEBT_MEAN"},
+    {"type": "double", "name": "CLOSED_AMT_CREDIT_SUM_DEBT_SUM"}, {"type": "double",
+    "name": "CLOSED_AMT_CREDIT_SUM_OVERDUE_MEAN"}, {"type": "double", "name": "CLOSED_AMT_CREDIT_SUM_LIMIT_MEAN"},
+    {"type": "double", "name": "CLOSED_AMT_CREDIT_SUM_LIMIT_SUM"}, {"type": "double",
+    "name": "CLOSED_AMT_ANNUITY_MAX"}, {"type": "double", "name": "CLOSED_AMT_ANNUITY_MEAN"},
+    {"type": "double", "name": "CLOSED_CNT_CREDIT_PROLONG_SUM"}, {"type": "double",
+    "name": "CLOSED_MONTHS_BALANCE_MIN_MIN"}, {"type": "double", "name": "CLOSED_MONTHS_BALANCE_MAX_MAX"},
+    {"type": "double", "name": "CLOSED_MONTHS_BALANCE_SIZE_MEAN"}, {"type": "double",
+    "name": "CLOSED_MONTHS_BALANCE_SIZE_SUM"}, {"type": "double", "name": "PREV_AMT_ANNUITY_MIN"},
+    {"type": "double", "name": "PREV_AMT_ANNUITY_MAX"}, {"type": "double", "name":
+    "PREV_AMT_ANNUITY_MEAN"}, {"type": "double", "name": "PREV_AMT_APPLICATION_MIN"},
+    {"type": "double", "name": "PREV_AMT_APPLICATION_MAX"}, {"type": "double", "name":
+    "PREV_AMT_APPLICATION_MEAN"}, {"type": "double", "name": "PREV_AMT_CREDIT_MIN"},
+    {"type": "double", "name": "PREV_AMT_CREDIT_MAX"}, {"type": "double", "name":
+    "PREV_AMT_CREDIT_MEAN"}, {"type": "double", "name": "PREV_APP_CREDIT_PERC_MIN"},
+    {"type": "double", "name": "PREV_APP_CREDIT_PERC_MAX"}, {"type": "double", "name":
+    "PREV_APP_CREDIT_PERC_MEAN"}, {"type": "double", "name": "PREV_APP_CREDIT_PERC_VAR"},
+    {"type": "double", "name": "PREV_AMT_DOWN_PAYMENT_MIN"}, {"type": "double", "name":
+    "PREV_AMT_DOWN_PAYMENT_MAX"}, {"type": "double", "name": "PREV_AMT_DOWN_PAYMENT_MEAN"},
+    {"type": "double", "name": "PREV_AMT_GOODS_PRICE_MIN"}, {"type": "double", "name":
+    "PREV_AMT_GOODS_PRICE_MAX"}, {"type": "double", "name": "PREV_AMT_GOODS_PRICE_MEAN"},
+    {"type": "double", "name": "PREV_HOUR_APPR_PROCESS_START_MIN"}, {"type": "double",
+    "name": "PREV_HOUR_APPR_PROCESS_START_MAX"}, {"type": "double", "name": "PREV_HOUR_APPR_PROCESS_START_MEAN"},
+    {"type": "double", "name": "PREV_RATE_DOWN_PAYMENT_MIN"}, {"type": "double", "name":
+    "PREV_RATE_DOWN_PAYMENT_MAX"}, {"type": "double", "name": "PREV_RATE_DOWN_PAYMENT_MEAN"},
+    {"type": "double", "name": "PREV_DAYS_DECISION_MIN"}, {"type": "double", "name":
+    "PREV_DAYS_DECISION_MAX"}, {"type": "double", "name": "PREV_DAYS_DECISION_MEAN"},
+    {"type": "double", "name": "PREV_CNT_PAYMENT_MEAN"}, {"type": "double", "name":
+    "PREV_CNT_PAYMENT_SUM"}, {"type": "double", "name": "PREV_NAME_CONTRACT_TYPE_Cash
+    loans_MEAN"}, {"type": "double", "name": "PREV_NAME_CONTRACT_TYPE_Consumer loans_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CONTRACT_TYPE_Revolving loans_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CONTRACT_TYPE_XNA_MEAN"}, {"type": "double", "name":
+    "PREV_WEEKDAY_APPR_PROCESS_START_FRIDAY_MEAN"}, {"type": "double", "name": "PREV_WEEKDAY_APPR_PROCESS_START_MONDAY_MEAN"},
+    {"type": "double", "name": "PREV_WEEKDAY_APPR_PROCESS_START_SATURDAY_MEAN"}, {"type":
+    "double", "name": "PREV_WEEKDAY_APPR_PROCESS_START_SUNDAY_MEAN"}, {"type": "double",
+    "name": "PREV_WEEKDAY_APPR_PROCESS_START_THURSDAY_MEAN"}, {"type": "double", "name":
+    "PREV_WEEKDAY_APPR_PROCESS_START_TUESDAY_MEAN"}, {"type": "double", "name": "PREV_WEEKDAY_APPR_PROCESS_START_WEDNESDAY_MEAN"},
+    {"type": "double", "name": "PREV_FLAG_LAST_APPL_PER_CONTRACT_N_MEAN"}, {"type":
+    "double", "name": "PREV_FLAG_LAST_APPL_PER_CONTRACT_Y_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CASH_LOAN_PURPOSE_Building a house or an annex_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Business development_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a garage_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a holiday home / land_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a home_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a new car_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a used car_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Car repairs_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Education_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CASH_LOAN_PURPOSE_Everyday expenses_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CASH_LOAN_PURPOSE_Furniture_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_CASH_LOAN_PURPOSE_Gasification / water supply_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CASH_LOAN_PURPOSE_Hobby_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_CASH_LOAN_PURPOSE_Journey_MEAN"}, {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Medicine_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Money for a third person_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Other_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Payments on other loans_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Purchase of electronic
+    equipment_MEAN"}, {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Refusal
+    to name the goal_MEAN"}, {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Repairs_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Urgent needs_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_Wedding / gift / holiday_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CASH_LOAN_PURPOSE_XAP_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CASH_LOAN_PURPOSE_XNA_MEAN"}, {"type": "double", "name": "PREV_NAME_CONTRACT_STATUS_Approved_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CONTRACT_STATUS_Canceled_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_CONTRACT_STATUS_Refused_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CONTRACT_STATUS_Unused offer_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_PAYMENT_TYPE_Cash through the bank_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_PAYMENT_TYPE_Cashless from the account of the employer_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_PAYMENT_TYPE_Non-cash from your account_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_PAYMENT_TYPE_XNA_MEAN"}, {"type": "double", "name":
+    "PREV_CODE_REJECT_REASON_CLIENT_MEAN"}, {"type": "double", "name": "PREV_CODE_REJECT_REASON_HC_MEAN"},
+    {"type": "double", "name": "PREV_CODE_REJECT_REASON_LIMIT_MEAN"}, {"type": "double",
+    "name": "PREV_CODE_REJECT_REASON_SCO_MEAN"}, {"type": "double", "name": "PREV_CODE_REJECT_REASON_SCOFR_MEAN"},
+    {"type": "double", "name": "PREV_CODE_REJECT_REASON_SYSTEM_MEAN"}, {"type": "double",
+    "name": "PREV_CODE_REJECT_REASON_VERIF_MEAN"}, {"type": "double", "name": "PREV_CODE_REJECT_REASON_XAP_MEAN"},
+    {"type": "double", "name": "PREV_CODE_REJECT_REASON_XNA_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_TYPE_SUITE_Children_MEAN"}, {"type": "double", "name": "PREV_NAME_TYPE_SUITE_Family_MEAN"},
+    {"type": "double", "name": "PREV_NAME_TYPE_SUITE_Group of people_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_TYPE_SUITE_Other_A_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_TYPE_SUITE_Other_B_MEAN"}, {"type": "double", "name": "PREV_NAME_TYPE_SUITE_Spouse,
+    partner_MEAN"}, {"type": "double", "name": "PREV_NAME_TYPE_SUITE_Unaccompanied_MEAN"},
+    {"type": "double", "name": "PREV_NAME_TYPE_SUITE_nan_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CLIENT_TYPE_New_MEAN"}, {"type": "double", "name": "PREV_NAME_CLIENT_TYPE_Refreshed_MEAN"},
+    {"type": "double", "name": "PREV_NAME_CLIENT_TYPE_Repeater_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_CLIENT_TYPE_XNA_MEAN"}, {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Additional
+    Service_MEAN"}, {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Animals_MEAN"},
+    {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Audio/Video_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_GOODS_CATEGORY_Auto Accessories_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_GOODS_CATEGORY_Clothing and Accessories_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_GOODS_CATEGORY_Computers_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_GOODS_CATEGORY_Construction Materials_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_GOODS_CATEGORY_Consumer Electronics_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_GOODS_CATEGORY_Direct Sales_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_GOODS_CATEGORY_Education_MEAN"}, {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Fitness_MEAN"},
+    {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Furniture_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_GOODS_CATEGORY_Gardening_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_GOODS_CATEGORY_Homewares_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_GOODS_CATEGORY_House Construction_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_GOODS_CATEGORY_Insurance_MEAN"}, {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Jewelry_MEAN"},
+    {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Medical Supplies_MEAN"},
+    {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Medicine_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_GOODS_CATEGORY_Mobile_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_GOODS_CATEGORY_Office Appliances_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_GOODS_CATEGORY_Other_MEAN"}, {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Photo
+    / Cinema Equipment_MEAN"}, {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Sport
+    and Leisure_MEAN"}, {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Tourism_MEAN"},
+    {"type": "double", "name": "PREV_NAME_GOODS_CATEGORY_Vehicles_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_GOODS_CATEGORY_Weapon_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_GOODS_CATEGORY_XNA_MEAN"}, {"type": "double", "name": "PREV_NAME_PORTFOLIO_Cards_MEAN"},
+    {"type": "double", "name": "PREV_NAME_PORTFOLIO_Cars_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_PORTFOLIO_Cash_MEAN"}, {"type": "double", "name": "PREV_NAME_PORTFOLIO_POS_MEAN"},
+    {"type": "double", "name": "PREV_NAME_PORTFOLIO_XNA_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_PRODUCT_TYPE_XNA_MEAN"}, {"type": "double", "name": "PREV_NAME_PRODUCT_TYPE_walk-in_MEAN"},
+    {"type": "double", "name": "PREV_NAME_PRODUCT_TYPE_x-sell_MEAN"}, {"type": "double",
+    "name": "PREV_CHANNEL_TYPE_AP+ (Cash loan)_MEAN"}, {"type": "double", "name":
+    "PREV_CHANNEL_TYPE_Car dealer_MEAN"}, {"type": "double", "name": "PREV_CHANNEL_TYPE_Channel
+    of corporate sales_MEAN"}, {"type": "double", "name": "PREV_CHANNEL_TYPE_Contact
+    center_MEAN"}, {"type": "double", "name": "PREV_CHANNEL_TYPE_Country-wide_MEAN"},
+    {"type": "double", "name": "PREV_CHANNEL_TYPE_Credit and cash offices_MEAN"},
+    {"type": "double", "name": "PREV_CHANNEL_TYPE_Regional / Local_MEAN"}, {"type":
+    "double", "name": "PREV_CHANNEL_TYPE_Stone_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_SELLER_INDUSTRY_Auto technology_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_SELLER_INDUSTRY_Clothing_MEAN"}, {"type": "double", "name": "PREV_NAME_SELLER_INDUSTRY_Connectivity_MEAN"},
+    {"type": "double", "name": "PREV_NAME_SELLER_INDUSTRY_Construction_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_SELLER_INDUSTRY_Consumer electronics_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_SELLER_INDUSTRY_Furniture_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_SELLER_INDUSTRY_Industry_MEAN"}, {"type": "double", "name":
+    "PREV_NAME_SELLER_INDUSTRY_Jewelry_MEAN"}, {"type": "double", "name": "PREV_NAME_SELLER_INDUSTRY_MLM
+    partners_MEAN"}, {"type": "double", "name": "PREV_NAME_SELLER_INDUSTRY_Tourism_MEAN"},
+    {"type": "double", "name": "PREV_NAME_SELLER_INDUSTRY_XNA_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_YIELD_GROUP_XNA_MEAN"}, {"type": "double", "name": "PREV_NAME_YIELD_GROUP_high_MEAN"},
+    {"type": "double", "name": "PREV_NAME_YIELD_GROUP_low_action_MEAN"}, {"type":
+    "double", "name": "PREV_NAME_YIELD_GROUP_low_normal_MEAN"}, {"type": "double",
+    "name": "PREV_NAME_YIELD_GROUP_middle_MEAN"}, {"type": "double", "name": "PREV_PRODUCT_COMBINATION_Card
+    Street_MEAN"}, {"type": "double", "name": "PREV_PRODUCT_COMBINATION_Card X-Sell_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_Cash_MEAN"}, {"type": "double",
+    "name": "PREV_PRODUCT_COMBINATION_Cash Street: high_MEAN"}, {"type": "double",
+    "name": "PREV_PRODUCT_COMBINATION_Cash Street: low_MEAN"}, {"type": "double",
+    "name": "PREV_PRODUCT_COMBINATION_Cash Street: middle_MEAN"}, {"type": "double",
+    "name": "PREV_PRODUCT_COMBINATION_Cash X-Sell: high_MEAN"}, {"type": "double",
+    "name": "PREV_PRODUCT_COMBINATION_Cash X-Sell: low_MEAN"}, {"type": "double",
+    "name": "PREV_PRODUCT_COMBINATION_Cash X-Sell: middle_MEAN"}, {"type": "double",
+    "name": "PREV_PRODUCT_COMBINATION_POS household with interest_MEAN"}, {"type":
+    "double", "name": "PREV_PRODUCT_COMBINATION_POS household without interest_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_POS industry with interest_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_POS industry without interest_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_POS mobile with interest_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_POS mobile without interest_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_POS other with interest_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_POS others without interest_MEAN"},
+    {"type": "double", "name": "PREV_PRODUCT_COMBINATION_nan_MEAN"}, {"type": "double",
+    "name": "APPROVED_AMT_ANNUITY_MIN"}, {"type": "double", "name": "APPROVED_AMT_ANNUITY_MAX"},
+    {"type": "double", "name": "APPROVED_AMT_ANNUITY_MEAN"}, {"type": "double", "name":
+    "APPROVED_AMT_APPLICATION_MIN"}, {"type": "double", "name": "APPROVED_AMT_APPLICATION_MAX"},
+    {"type": "double", "name": "APPROVED_AMT_APPLICATION_MEAN"}, {"type": "double",
+    "name": "APPROVED_AMT_CREDIT_MIN"}, {"type": "double", "name": "APPROVED_AMT_CREDIT_MAX"},
+    {"type": "double", "name": "APPROVED_AMT_CREDIT_MEAN"}, {"type": "double", "name":
+    "APPROVED_APP_CREDIT_PERC_MIN"}, {"type": "double", "name": "APPROVED_APP_CREDIT_PERC_MAX"},
+    {"type": "double", "name": "APPROVED_APP_CREDIT_PERC_MEAN"}, {"type": "double",
+    "name": "APPROVED_APP_CREDIT_PERC_VAR"}, {"type": "double", "name": "APPROVED_AMT_DOWN_PAYMENT_MIN"},
+    {"type": "double", "name": "APPROVED_AMT_DOWN_PAYMENT_MAX"}, {"type": "double",
+    "name": "APPROVED_AMT_DOWN_PAYMENT_MEAN"}, {"type": "double", "name": "APPROVED_AMT_GOODS_PRICE_MIN"},
+    {"type": "double", "name": "APPROVED_AMT_GOODS_PRICE_MAX"}, {"type": "double",
+    "name": "APPROVED_AMT_GOODS_PRICE_MEAN"}, {"type": "double", "name": "APPROVED_HOUR_APPR_PROCESS_START_MIN"},
+    {"type": "double", "name": "APPROVED_HOUR_APPR_PROCESS_START_MAX"}, {"type": "double",
+    "name": "APPROVED_HOUR_APPR_PROCESS_START_MEAN"}, {"type": "double", "name": "APPROVED_RATE_DOWN_PAYMENT_MIN"},
+    {"type": "double", "name": "APPROVED_RATE_DOWN_PAYMENT_MAX"}, {"type": "double",
+    "name": "APPROVED_RATE_DOWN_PAYMENT_MEAN"}, {"type": "double", "name": "APPROVED_DAYS_DECISION_MIN"},
+    {"type": "double", "name": "APPROVED_DAYS_DECISION_MAX"}, {"type": "double", "name":
+    "APPROVED_DAYS_DECISION_MEAN"}, {"type": "double", "name": "APPROVED_CNT_PAYMENT_MEAN"},
+    {"type": "double", "name": "APPROVED_CNT_PAYMENT_SUM"}, {"type": "double", "name":
+    "REFUSED_AMT_ANNUITY_MIN"}, {"type": "double", "name": "REFUSED_AMT_ANNUITY_MAX"},
+    {"type": "double", "name": "REFUSED_AMT_ANNUITY_MEAN"}, {"type": "double", "name":
+    "REFUSED_AMT_APPLICATION_MIN"}, {"type": "double", "name": "REFUSED_AMT_APPLICATION_MAX"},
+    {"type": "double", "name": "REFUSED_AMT_APPLICATION_MEAN"}, {"type": "double",
+    "name": "REFUSED_AMT_CREDIT_MIN"}, {"type": "double", "name": "REFUSED_AMT_CREDIT_MAX"},
+    {"type": "double", "name": "REFUSED_AMT_CREDIT_MEAN"}, {"type": "double", "name":
+    "REFUSED_APP_CREDIT_PERC_MIN"}, {"type": "double", "name": "REFUSED_APP_CREDIT_PERC_MAX"},
+    {"type": "double", "name": "REFUSED_APP_CREDIT_PERC_MEAN"}, {"type": "double",
+    "name": "REFUSED_AMT_GOODS_PRICE_MIN"}, {"type": "double", "name": "REFUSED_AMT_GOODS_PRICE_MAX"},
+    {"type": "double", "name": "REFUSED_AMT_GOODS_PRICE_MEAN"}, {"type": "double",
+    "name": "REFUSED_HOUR_APPR_PROCESS_START_MIN"}, {"type": "double", "name": "REFUSED_HOUR_APPR_PROCESS_START_MAX"},
+    {"type": "double", "name": "REFUSED_HOUR_APPR_PROCESS_START_MEAN"}, {"type": "double",
+    "name": "REFUSED_DAYS_DECISION_MIN"}, {"type": "double", "name": "REFUSED_DAYS_DECISION_MAX"},
+    {"type": "double", "name": "REFUSED_DAYS_DECISION_MEAN"}, {"type": "double", "name":
+    "REFUSED_CNT_PAYMENT_MEAN"}, {"type": "double", "name": "REFUSED_CNT_PAYMENT_SUM"},
+    {"type": "double", "name": "POS_MONTHS_BALANCE_MAX"}, {"type": "double", "name":
+    "POS_MONTHS_BALANCE_MEAN"}, {"type": "double", "name": "POS_MONTHS_BALANCE_SIZE"},
+    {"type": "double", "name": "POS_SK_DPD_MAX"}, {"type": "double", "name": "POS_SK_DPD_MEAN"},
+    {"type": "double", "name": "POS_SK_DPD_DEF_MAX"}, {"type": "double", "name": "POS_SK_DPD_DEF_MEAN"},
+    {"type": "double", "name": "POS_NAME_CONTRACT_STATUS_Active_MEAN"}, {"type": "double",
+    "name": "POS_NAME_CONTRACT_STATUS_Amortized debt_MEAN"}, {"type": "double", "name":
+    "POS_NAME_CONTRACT_STATUS_Approved_MEAN"}, {"type": "double", "name": "POS_NAME_CONTRACT_STATUS_Canceled_MEAN"},
+    {"type": "double", "name": "POS_NAME_CONTRACT_STATUS_Completed_MEAN"}, {"type":
+    "double", "name": "POS_NAME_CONTRACT_STATUS_Demand_MEAN"}, {"type": "double",
+    "name": "POS_NAME_CONTRACT_STATUS_Returned to the store_MEAN"}, {"type": "double",
+    "name": "POS_NAME_CONTRACT_STATUS_Signed_MEAN"}, {"type": "double", "name": "POS_NAME_CONTRACT_STATUS_XNA_MEAN"},
+    {"type": "double", "name": "POS_COUNT"}, {"type": "double", "name": "INSTAL_NUM_INSTALMENT_VERSION_NUNIQUE"},
+    {"type": "double", "name": "INSTAL_DPD_MAX"}, {"type": "double", "name": "INSTAL_DPD_MEAN"},
+    {"type": "double", "name": "INSTAL_DPD_SUM"}, {"type": "double", "name": "INSTAL_DBD_MAX"},
+    {"type": "double", "name": "INSTAL_DBD_MEAN"}, {"type": "double", "name": "INSTAL_DBD_SUM"},
+    {"type": "double", "name": "INSTAL_PAYMENT_PERC_MAX"}, {"type": "double", "name":
+    "INSTAL_PAYMENT_PERC_MEAN"}, {"type": "double", "name": "INSTAL_PAYMENT_PERC_SUM"},
+    {"type": "double", "name": "INSTAL_PAYMENT_PERC_VAR"}, {"type": "double", "name":
+    "INSTAL_PAYMENT_DIFF_MAX"}, {"type": "double", "name": "INSTAL_PAYMENT_DIFF_MEAN"},
+    {"type": "double", "name": "INSTAL_PAYMENT_DIFF_SUM"}, {"type": "double", "name":
+    "INSTAL_PAYMENT_DIFF_VAR"}, {"type": "double", "name": "INSTAL_AMT_INSTALMENT_MAX"},
+    {"type": "double", "name": "INSTAL_AMT_INSTALMENT_MEAN"}, {"type": "double", "name":
+    "INSTAL_AMT_INSTALMENT_SUM"}, {"type": "double", "name": "INSTAL_AMT_PAYMENT_MIN"},
+    {"type": "double", "name": "INSTAL_AMT_PAYMENT_MAX"}, {"type": "double", "name":
+    "INSTAL_AMT_PAYMENT_MEAN"}, {"type": "double", "name": "INSTAL_AMT_PAYMENT_SUM"},
+    {"type": "double", "name": "INSTAL_DAYS_ENTRY_PAYMENT_MAX"}, {"type": "double",
+    "name": "INSTAL_DAYS_ENTRY_PAYMENT_MEAN"}, {"type": "double", "name": "INSTAL_DAYS_ENTRY_PAYMENT_SUM"},
+    {"type": "double", "name": "INSTAL_COUNT"}, {"type": "double", "name": "CC_MONTHS_BALANCE_MIN"},
+    {"type": "double", "name": "CC_MONTHS_BALANCE_MAX"}, {"type": "double", "name":
+    "CC_MONTHS_BALANCE_MEAN"}, {"type": "double", "name": "CC_MONTHS_BALANCE_SUM"},
+    {"type": "double", "name": "CC_MONTHS_BALANCE_VAR"}, {"type": "double", "name":
+    "CC_AMT_BALANCE_MIN"}, {"type": "double", "name": "CC_AMT_BALANCE_MAX"}, {"type":
+    "double", "name": "CC_AMT_BALANCE_MEAN"}, {"type": "double", "name": "CC_AMT_BALANCE_SUM"},
+    {"type": "double", "name": "CC_AMT_BALANCE_VAR"}, {"type": "double", "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MIN"},
+    {"type": "double", "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MAX"}, {"type": "double",
+    "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MEAN"}, {"type": "double", "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_SUM"},
+    {"type": "double", "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_VAR"}, {"type": "double",
+    "name": "CC_AMT_DRAWINGS_ATM_CURRENT_MIN"}, {"type": "double", "name": "CC_AMT_DRAWINGS_ATM_CURRENT_MAX"},
+    {"type": "double", "name": "CC_AMT_DRAWINGS_ATM_CURRENT_MEAN"}, {"type": "double",
+    "name": "CC_AMT_DRAWINGS_ATM_CURRENT_SUM"}, {"type": "double", "name": "CC_AMT_DRAWINGS_ATM_CURRENT_VAR"},
+    {"type": "double", "name": "CC_AMT_DRAWINGS_CURRENT_MIN"}, {"type": "double",
+    "name": "CC_AMT_DRAWINGS_CURRENT_MAX"}, {"type": "double", "name": "CC_AMT_DRAWINGS_CURRENT_MEAN"},
+    {"type": "double", "name": "CC_AMT_DRAWINGS_CURRENT_SUM"}, {"type": "double",
+    "name": "CC_AMT_DRAWINGS_CURRENT_VAR"}, {"type": "double", "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MIN"},
+    {"type": "double", "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MAX"}, {"type": "double",
+    "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MEAN"}, {"type": "double", "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_SUM"},
+    {"type": "double", "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_VAR"}, {"type": "double",
+    "name": "CC_AMT_DRAWINGS_POS_CURRENT_MIN"}, {"type": "double", "name": "CC_AMT_DRAWINGS_POS_CURRENT_MAX"},
+    {"type": "double", "name": "CC_AMT_DRAWINGS_POS_CURRENT_MEAN"}, {"type": "double",
+    "name": "CC_AMT_DRAWINGS_POS_CURRENT_SUM"}, {"type": "double", "name": "CC_AMT_DRAWINGS_POS_CURRENT_VAR"},
+    {"type": "double", "name": "CC_AMT_INST_MIN_REGULARITY_MIN"}, {"type": "double",
+    "name": "CC_AMT_INST_MIN_REGULARITY_MAX"}, {"type": "double", "name": "CC_AMT_INST_MIN_REGULARITY_MEAN"},
+    {"type": "double", "name": "CC_AMT_INST_MIN_REGULARITY_SUM"}, {"type": "double",
+    "name": "CC_AMT_INST_MIN_REGULARITY_VAR"}, {"type": "double", "name": "CC_AMT_PAYMENT_CURRENT_MIN"},
+    {"type": "double", "name": "CC_AMT_PAYMENT_CURRENT_MAX"}, {"type": "double", "name":
+    "CC_AMT_PAYMENT_CURRENT_MEAN"}, {"type": "double", "name": "CC_AMT_PAYMENT_CURRENT_SUM"},
+    {"type": "double", "name": "CC_AMT_PAYMENT_CURRENT_VAR"}, {"type": "double", "name":
+    "CC_AMT_PAYMENT_TOTAL_CURRENT_MIN"}, {"type": "double", "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MAX"},
+    {"type": "double", "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MEAN"}, {"type": "double",
+    "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_SUM"}, {"type": "double", "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_VAR"},
+    {"type": "double", "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MIN"}, {"type": "double",
+    "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MAX"}, {"type": "double", "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MEAN"},
+    {"type": "double", "name": "CC_AMT_RECEIVABLE_PRINCIPAL_SUM"}, {"type": "double",
+    "name": "CC_AMT_RECEIVABLE_PRINCIPAL_VAR"}, {"type": "double", "name": "CC_AMT_RECIVABLE_MIN"},
+    {"type": "double", "name": "CC_AMT_RECIVABLE_MAX"}, {"type": "double", "name":
+    "CC_AMT_RECIVABLE_MEAN"}, {"type": "double", "name": "CC_AMT_RECIVABLE_SUM"},
+    {"type": "double", "name": "CC_AMT_RECIVABLE_VAR"}, {"type": "double", "name":
+    "CC_AMT_TOTAL_RECEIVABLE_MIN"}, {"type": "double", "name": "CC_AMT_TOTAL_RECEIVABLE_MAX"},
+    {"type": "double", "name": "CC_AMT_TOTAL_RECEIVABLE_MEAN"}, {"type": "double",
+    "name": "CC_AMT_TOTAL_RECEIVABLE_SUM"}, {"type": "double", "name": "CC_AMT_TOTAL_RECEIVABLE_VAR"},
+    {"type": "double", "name": "CC_CNT_DRAWINGS_ATM_CURRENT_MIN"}, {"type": "double",
+    "name": "CC_CNT_DRAWINGS_ATM_CURRENT_MAX"}, {"type": "double", "name": "CC_CNT_DRAWINGS_ATM_CURRENT_MEAN"},
+    {"type": "double", "name": "CC_CNT_DRAWINGS_ATM_CURRENT_SUM"}, {"type": "double",
+    "name": "CC_CNT_DRAWINGS_ATM_CURRENT_VAR"}, {"type": "double", "name": "CC_CNT_DRAWINGS_CURRENT_MIN"},
+    {"type": "double", "name": "CC_CNT_DRAWINGS_CURRENT_MAX"}, {"type": "double",
+    "name": "CC_CNT_DRAWINGS_CURRENT_MEAN"}, {"type": "double", "name": "CC_CNT_DRAWINGS_CURRENT_SUM"},
+    {"type": "double", "name": "CC_CNT_DRAWINGS_CURRENT_VAR"}, {"type": "double",
+    "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MIN"}, {"type": "double", "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MAX"},
+    {"type": "double", "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MEAN"}, {"type": "double",
+    "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_SUM"}, {"type": "double", "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_VAR"},
+    {"type": "double", "name": "CC_CNT_DRAWINGS_POS_CURRENT_MIN"}, {"type": "double",
+    "name": "CC_CNT_DRAWINGS_POS_CURRENT_MAX"}, {"type": "double", "name": "CC_CNT_DRAWINGS_POS_CURRENT_MEAN"},
+    {"type": "double", "name": "CC_CNT_DRAWINGS_POS_CURRENT_SUM"}, {"type": "double",
+    "name": "CC_CNT_DRAWINGS_POS_CURRENT_VAR"}, {"type": "double", "name": "CC_CNT_INSTALMENT_MATURE_CUM_MIN"},
+    {"type": "double", "name": "CC_CNT_INSTALMENT_MATURE_CUM_MAX"}, {"type": "double",
+    "name": "CC_CNT_INSTALMENT_MATURE_CUM_MEAN"}, {"type": "double", "name": "CC_CNT_INSTALMENT_MATURE_CUM_SUM"},
+    {"type": "double", "name": "CC_CNT_INSTALMENT_MATURE_CUM_VAR"}, {"type": "double",
+    "name": "CC_SK_DPD_MIN"}, {"type": "double", "name": "CC_SK_DPD_MAX"}, {"type":
+    "double", "name": "CC_SK_DPD_MEAN"}, {"type": "double", "name": "CC_SK_DPD_SUM"},
+    {"type": "double", "name": "CC_SK_DPD_VAR"}, {"type": "double", "name": "CC_SK_DPD_DEF_MIN"},
+    {"type": "double", "name": "CC_SK_DPD_DEF_MAX"}, {"type": "double", "name": "CC_SK_DPD_DEF_MEAN"},
+    {"type": "double", "name": "CC_SK_DPD_DEF_SUM"}, {"type": "double", "name": "CC_SK_DPD_DEF_VAR"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Active_MIN"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Active_MAX"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Active_MEAN"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Active_SUM"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Active_VAR"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Approved_MAX"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Approved_MEAN"}, {"type":
+    "double", "name": "CC_NAME_CONTRACT_STATUS_Approved_SUM"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Approved_VAR"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Completed_MIN"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Completed_MAX"}, {"type":
+    "double", "name": "CC_NAME_CONTRACT_STATUS_Completed_MEAN"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Completed_SUM"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Completed_VAR"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Demand_MIN"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Demand_MAX"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Demand_MEAN"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Demand_SUM"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Demand_VAR"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Refused_MAX"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Refused_MEAN"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Refused_SUM"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Refused_VAR"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Sent proposal_MAX"}, {"type":
+    "double", "name": "CC_NAME_CONTRACT_STATUS_Sent proposal_MEAN"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Sent proposal_SUM"}, {"type": "double", "name":
+    "CC_NAME_CONTRACT_STATUS_Sent proposal_VAR"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Signed_MIN"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Signed_MAX"}, {"type": "double",
+    "name": "CC_NAME_CONTRACT_STATUS_Signed_MEAN"}, {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Signed_SUM"},
+    {"type": "double", "name": "CC_NAME_CONTRACT_STATUS_Signed_VAR"}, {"type": "double",
+    "name": "CC_COUNT"}]'
+  outputs: '[{"type": "double", "name": "TARGET"}]'
+  params: null
+utc_time_created: '2023-09-18 15:35:30.074805'
