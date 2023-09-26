@@ -5,7 +5,7 @@ flavors:
       virtualenv: python_env.yaml
     loader_module: mlflow.sklearn
     model_path: model.pkl
-    predict_fn: predict
+    predict_fn: predict_proba
     python_version: 3.10.4
   sklearn:
     code: null
@@ -13,7 +13,7 @@ flavors:
     serialization_format: cloudpickle
     sklearn_version: 1.2.2
 mlflow_version: 2.6.0
-model_uuid: ae192d3a919c4c11957e3d9560a6e87a
+model_uuid: a7788b5a229249979fb67d03e4d58741
 signature:
   inputs: '[{"type": "integer", "name": "CODE_GENDER"}, {"type": "integer", "name":
     "FLAG_OWN_CAR"}, {"type": "integer", "name": "FLAG_OWN_REALTY"}, {"type": "integer",
@@ -541,4 +541,4 @@ signature:
     {"type": "double", "name": "CC_COUNT"}]'
   outputs: '[{"type": "double", "name": "TARGET"}]'
   params: null
-utc_time_created: '2023-09-25 17:52:14.740969'
+utc_time_created: '2023-09-26 17:13:23.245248'
