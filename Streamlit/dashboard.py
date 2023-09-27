@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
-import json
 import requests
+import matplotlib.pyplot as plt
 
 
 def request_prediction(model_uri, data):
@@ -35,28 +35,35 @@ def main():
         echantillon_clients["SK_ID_CURR"].tolist(),
     )
 
-    st.title("Prédiction de faillite d'un client")
+    st.title("Dashboard Scoring Crédit")
 
-    # occupation_moy = st.number_input('Occupation moyenne de la maison (en nombre d\'habitants)',
-    #                                 min_value=0., value=3., step=1.)
+    data = (
+        echantillon_clients.loc[echantillon_clients["SK_ID_CURR"] == client_choice]
+        .drop(columns={"SK_ID_CURR"})
+        .to_dict(orient="records")
+    )
 
-    predict_btn = st.button("Prédire")
-    if predict_btn:
-        data = (
-            echantillon_clients.loc[echantillon_clients["SK_ID_CURR"] == client_choice]
-            .drop(columns={"SK_ID_CURR"})
-            .to_dict(orient="records")
-        )
+    pred = request_prediction(MLFLOW_URI, data)
+    prediction = pd.DataFrame.from_dict(pred)
+    prediction_1 = prediction["predictions"][0][1]
 
-        pred = request_prediction(MLFLOW_URI, data)
-        prediction = pd.DataFrame.from_dict(pred)
-        prediction_1 = prediction["predictions"][0][1]
+    if prediction_1 < seuil:
+        st.header("Client {} : Crédit :green[accepté]".format(client_choice))
 
-        st.write(
-            "La probabilité de faillite du client est de {:.2f} %".format(
-                prediction_1 * 100
-            )
-        )
+    else:
+        st.header("Client {} : Crédit :red[refusé]".format(client_choice))
+
+    st.write("Risque de défaut = {:.2f} %".format(prediction_1 * 100))
+
+    # Positionnement du client sur une jauge
+    fig, ax = plt.subplots(figsize=(9, 2))
+    plt.yticks([])
+    plt.grid(visible=False)
+    plt.box(on=False)
+    plt.barh(width=100, y=0, color="red")
+    plt.barh(width=seuil * 100, y=0, color="green")
+    plt.axvline(x=prediction_1 * 100, color="black", linewidth=4, linestyle="--")
+    st.pyplot(fig)
 
 
 if __name__ == "__main__":

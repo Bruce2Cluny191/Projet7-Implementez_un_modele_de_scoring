@@ -13,7 +13,7 @@ flavors:
     serialization_format: cloudpickle
     sklearn_version: 1.2.2
 mlflow_version: 2.6.0
-model_uuid: a7788b5a229249979fb67d03e4d58741
+model_uuid: cd62dd45c50b48ce90d914933dac5613
 signature:
   inputs: '[{"type": "integer", "name": "CODE_GENDER"}, {"type": "integer", "name":
     "FLAG_OWN_CAR"}, {"type": "integer", "name": "FLAG_OWN_REALTY"}, {"type": "integer",
@@ -541,4 +541,4 @@ signature:
     {"type": "double", "name": "CC_COUNT"}]'
   outputs: '[{"type": "double", "name": "TARGET"}]'
   params: null
-utc_time_created: '2023-09-26 17:13:23.245248'
+utc_time_created: '2023-09-27 09:36:53.639044'
