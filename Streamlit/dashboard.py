@@ -1,20 +1,17 @@
 import pandas as pd
 import streamlit as st
 import requests
+import json
 import matplotlib.pyplot as plt
-import seaborn as sns
 import pickle
 import shap
 
 
-def request_prediction(model_uri, data):
-    headers = {"Content-Type": "application/json"}
-
-    data_json = {"dataframe_records": data}
-
-    response = requests.request(
-        method="POST", headers=headers, url=model_uri, json=data_json
-    )
+def request_prediction(model_uri, client_id):
+    # Convertir l'input client au format json
+    data_json = {"ID_client": client_id}
+    response = requests.post(url=model_uri, json=json.dumps(data_json))
+    # response = requests.request(method="POST", headers=headers, url=model_uri, json=data_json)
 
     if response.status_code != 200:
         raise Exception(
@@ -23,7 +20,7 @@ def request_prediction(model_uri, data):
             )
         )
 
-    return response.json()
+    return response
 
 
 def main():
@@ -41,23 +38,29 @@ def main():
         perfect_model = pickle.load(mod_pickle)
         return perfect_model
 
-    echantillon_clients = pd.read_csv(
-        "data/echantillon_clients.csv", index_col="SK_ID_CURR"
-    )
-    trainset = pd.read_csv("data/trainset.csv")
-    trainset_0 = trainset.loc[trainset["TARGET"] == 0].drop(columns={"TARGET"})
-    trainset_1 = trainset.loc[trainset["TARGET"] == 1].drop(columns={"TARGET"})
-    seuil = echantillon_clients.iloc[0]["threshold"]
-    echantillon_clients = echantillon_clients.drop(columns={"threshold"})
+    def prediction_1(client):
+        pred = request_prediction(URI, client)
+        # prediction = pd.DataFrame.from_dict(pred)
+        # prediction_1 = prediction["predictions"][0][1]
+        return pred
 
-    MLFLOW_URI = "http://127.0.0.1:5000/invocations"
+    echantillon_clients = pd.read_csv("echantillon_clients.csv", index_col="SK_ID_CURR")
+    trainset = pd.read_csv("trainset.csv")
+    trainset_0 = trainset.loc[trainset["TARGET"] == 0].drop(columns=["TARGET"])
+    trainset_1 = trainset.loc[trainset["TARGET"] == 1].drop(columns=["TARGET"])
+    seuil = echantillon_clients.iloc[0]["threshold"]
+    echantillon_clients = echantillon_clients.drop(columns=["threshold"])
+
+    URI = "http://127.0.0.1:8000/invocations"
 
     client_choice = st.sidebar.selectbox(
         "Quel client souhaitez-vous évaluer ?", echantillon_clients.index
     )
 
+    # Saisie client
     data_client = info_client(client_choice)
 
+    # SIDEBAR
     st.sidebar.write("Client :blue[{}]".format(client_choice))
     st.sidebar.write(
         "Âge : :orange[{}] ans".format(int(-data_client["DAYS_BIRTH"] / 365))
@@ -93,17 +96,14 @@ def main():
         )
     )
 
+    # PAGE PRINCIPALE
     st.title("Dashboard Scoring Crédit")
 
-    data = data_client.to_dict(orient="records")
-
-    pred = request_prediction(MLFLOW_URI, data)
-    prediction = pd.DataFrame.from_dict(pred)
-    prediction_1 = prediction["predictions"][0][1]
+    prediction_1 = prediction_1(client_choice)
 
     if prediction_1 < seuil:
         st.header("Client :blue[{}] : Crédit :green[accepté]".format(client_choice))
-        st.write(
+        st.subheader(
             "Risque de défaut = :green[{:.1f} %] - Seuil de décision = :orange[{:.1f} %]".format(
                 prediction_1 * 100, seuil * 100
             )
@@ -111,7 +111,7 @@ def main():
 
     else:
         st.header("Client :blue[{}] : Crédit :red[refusé]".format(client_choice))
-        st.write(
+        st.subheader(
             "Risque de défaut = :red[{:.1f} %] - Seuil de décision = :orange[{:.1f} %]".format(
                 prediction_1 * 100, seuil * 100
             )
