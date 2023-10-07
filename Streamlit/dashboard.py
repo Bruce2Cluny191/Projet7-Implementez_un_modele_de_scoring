@@ -2,16 +2,15 @@ import pandas as pd
 import streamlit as st
 import requests
 import json
-import matplotlib.pyplot as plt
-import pickle
+import joblib
 import shap
-
+import matplotlib.pyplot as plt
 
 def request_prediction(model_uri, client_id):
+    """Requête de prédiction envoyée à l'API"""
     # Convertir l'input client au format json
-    data_json = {"ID_client": client_id}
-    response = requests.post(url=model_uri, json=json.dumps(data_json))
-    # response = requests.request(method="POST", headers=headers, url=model_uri, json=data_json)
+    input = {"client_choice":client_id}
+    response = requests.post(url=model_uri, data=json.dumps(input))
 
     if response.status_code != 200:
         raise Exception(
@@ -19,45 +18,32 @@ def request_prediction(model_uri, client_id):
                 response.status_code, response.text
             )
         )
+    return response.json()
+def info_client(id_client):
+    """Isole la ligne du client voulu"""
+    data_client = echantillon_clients.loc[echantillon_clients.index == id_client]
+    return data_client
 
-    return response
+# Récupération et préparation des données
+echantillon_clients = pd.read_csv("echantillon_clients.csv", index_col="SK_ID_CURR")
+seuil = echantillon_clients.iloc[0]["threshold"]
+echantillon_clients = echantillon_clients.drop(columns=["threshold"])
+trainset = pd.read_csv("trainset.csv")
+trainset_0 = trainset.loc[trainset["TARGET"] == 0].drop(columns=["TARGET"])
+trainset_1 = trainset.loc[trainset["TARGET"] == 1].drop(columns=["TARGET"])
+shap_values = joblib.load("explainer.joblib")
+list_index = echantillon_clients.index.tolist()
 
-
+# End-point de l'API
+URI = "http://127.0.0.1:8000/invocations"
 def main():
-    def info_client(ID):
-        """Isole la ligne du client voulu"""
-        data_client = echantillon_clients.loc[echantillon_clients.index == ID]
-        return data_client
 
-    def chargement_model():
-        """Chargement du modèle entraîné sur tous les clients avec target"""
-        mod_pickle = open(
-            "C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlflow_model/model.pkl",
-            "rb",
-        )
-        perfect_model = pickle.load(mod_pickle)
-        return perfect_model
-
-    def prediction_1(client):
-        pred = request_prediction(URI, client)
-        # prediction = pd.DataFrame.from_dict(pred)
-        # prediction_1 = prediction["predictions"][0][1]
-        return pred
-
-    echantillon_clients = pd.read_csv("echantillon_clients.csv", index_col="SK_ID_CURR")
-    trainset = pd.read_csv("trainset.csv")
-    trainset_0 = trainset.loc[trainset["TARGET"] == 0].drop(columns=["TARGET"])
-    trainset_1 = trainset.loc[trainset["TARGET"] == 1].drop(columns=["TARGET"])
-    seuil = echantillon_clients.iloc[0]["threshold"]
-    echantillon_clients = echantillon_clients.drop(columns=["threshold"])
-
-    URI = "http://127.0.0.1:8000/invocations"
-
+    # Choix de l'id client par le chargé de relation client
     client_choice = st.sidebar.selectbox(
         "Quel client souhaitez-vous évaluer ?", echantillon_clients.index
     )
 
-    # Saisie client
+    # Chargement des données du client choisi
     data_client = info_client(client_choice)
 
     # SIDEBAR
@@ -99,7 +85,8 @@ def main():
     # PAGE PRINCIPALE
     st.title("Dashboard Scoring Crédit")
 
-    prediction_1 = prediction_1(client_choice)
+    # Récupération de la probabilité
+    prediction_1 = request_prediction(URI, client_choice)
 
     if prediction_1 < seuil:
         st.header("Client :blue[{}] : Crédit :green[accepté]".format(client_choice))
@@ -128,26 +115,25 @@ def main():
     plt.axvline(x=seuil * 100, color="orange", linewidth=4, linestyle="-")
     st.pyplot(fig)
 
-    # Feature Importance locale du client et globale de l'ensemble des clients
+    # Feature Importance locale du client
     if st.checkbox(
         "Visualiser les principales caractéristiques pour le score du client :blue[{}]".format(
             client_choice
         )
     ):
-        perfect_model = chargement_model()
-        f = lambda x: perfect_model.predict_proba(x)[:, 1]
-        med = echantillon_clients.mean().values.reshape(
-            (1, echantillon_clients.shape[1])
-        )
-        fig, ax = plt.subplots(figsize=(6, 6))
-        explainer = shap.Explainer(f, med)
-        shap_values = explainer(data_client, max_evals=1595)
-        shap.plots.waterfall(shap_values[0], max_display=10)
+        fig, ax = plt.subplots(figsize=(9, 9))
+        shap.plots.waterfall(shap_values[list_index.index(client_choice)], max_display=10)
+        st.pyplot(fig)
+
+    # Feature importance globale
+    if st.checkbox("Visualiser les caractéristiques les plus importantes au global"):
+        fig, ax = plt.subplots(figsize=(9, 9))
+        shap.summary_plot(shap_values, max_display=10)
         st.pyplot(fig)
 
     # Distribution des features selon les classes avec positionnement du client
     if st.checkbox(
-        "Situer le client :blue[{}] dans la distribution des caractéristiques".format(
+        "Situer le client :blue[{}] dans la distribution des caractéristiques selon le statut d'acceptation".format(
             client_choice
         )
     ):
@@ -181,7 +167,6 @@ def main():
                 client_choice, data_client[caracteristique].values[0]
             )
         )
-
 
 if __name__ == "__main__":
     main()
