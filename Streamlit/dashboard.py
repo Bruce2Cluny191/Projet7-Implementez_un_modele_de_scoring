@@ -143,7 +143,7 @@ def main():
 
         fig = plt.figure(figsize=(9, 5))
         ax = fig.add_subplot(121)
-        ax.hist(trainset_0[caracteristique], color="green", bins=20)
+        ax.hist(trainset_0[caracteristique], color="green", bins=5)
         ax.axvline(
             data_client[caracteristique].values[0],
             color="black",
@@ -152,7 +152,7 @@ def main():
         )
         ax.set(title="Crédits acceptés")
         ax = fig.add_subplot(122)
-        ax.hist(trainset_1[caracteristique], color="red", bins=20)
+        ax.hist(trainset_1[caracteristique], color="red", bins=5)
         ax.axvline(
             data_client[caracteristique].values[0],
             color="black",
