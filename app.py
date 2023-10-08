@@ -4,7 +4,6 @@ import uvicorn
 from fastapi import FastAPI
 import joblib
 from pydantic import BaseModel
-import shap
 
 # Récupération des modèle et base d'échantillons clients
 perfect_model = joblib.load("pipeline_lgbm.joblib")

@@ -133,7 +133,7 @@ def main():
 
     # Distribution des features selon les classes avec positionnement du client
     if st.checkbox(
-        "Situer le client :blue[{}] dans la distribution des caractéristiques selon le statut d'acceptation".format(
+        "Situer le client :blue[{}] dans la distribution des caractéristiques selon le comportement des clients".format(
             client_choice
         )
     ):
@@ -150,7 +150,7 @@ def main():
             linewidth=4,
             linestyle="--",
         )
-        ax.set(title="Crédits acceptés")
+        ax.set(title="Sans défaut de paiement")
         ax = fig.add_subplot(122)
         ax.hist(trainset_1[caracteristique], color="red", bins=5)
         ax.axvline(
@@ -159,7 +159,7 @@ def main():
             linewidth=4,
             linestyle="--",
         )
-        ax.set(title="Crédits refusés")
+        ax.set(title="Avec défaut de paiement")
         st.pyplot(fig)
 
         st.write(
