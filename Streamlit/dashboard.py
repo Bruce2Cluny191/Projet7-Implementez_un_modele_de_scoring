@@ -35,7 +35,7 @@ shap_values = joblib.load("explainer.joblib")
 list_index = echantillon_clients.index.tolist()
 
 # End-point de l'API
-URI = "http://127.0.0.1:8000/invocations"
+URI = "https://scoring-client-6cc83c15008a.herokuapp.com/invocations"
 def main():
 
     # Choix de l'id client par le chargé de relation client
