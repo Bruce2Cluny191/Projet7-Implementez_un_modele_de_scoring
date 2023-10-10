@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+mlruns/
+.idea/
+__pycache__/
+.pytest_cache/
+data/shap_summary_plot_307508_clients.png
+mlflow_model/
+Streamlit/
+data_drift_report.html
+*.ipynb
+README.md
+test_app.py

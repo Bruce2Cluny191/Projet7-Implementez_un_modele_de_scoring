@@ -5,10 +5,14 @@ from fastapi import FastAPI
 import joblib
 from pydantic import BaseModel
 
-# Récupération des modèle et base d'échantillons clients
-perfect_model = joblib.load("pipeline_lgbm.joblib")
-echantillon_clients = pd.read_csv("data/echantillon_clients.csv", index_col="SK_ID_CURR")
-echantillon_clients = echantillon_clients.drop(columns=["threshold"])
+def imports():
+    """Récupération des modèle et base d'échantillons clients"""
+    model = joblib.load("pipeline_lgbm.joblib")
+    clients = pd.read_csv("data/echantillon_clients.csv", index_col="SK_ID_CURR")
+    clients = clients.drop(columns=["threshold"])
+    return model, clients
+
+perfect_model, echantillon_clients = imports()
 
 # Class which describes ID client
 class ID_client(BaseModel):
