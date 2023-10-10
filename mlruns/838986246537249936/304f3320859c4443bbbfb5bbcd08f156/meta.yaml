@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/304f3320859c4443bbbfb5bbcd08f156/artifacts
+end_time: 1694733759411
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 304f3320859c4443bbbfb5bbcd08f156
+run_name: burly-sheep-298
+run_uuid: 304f3320859c4443bbbfb5bbcd08f156
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694730774745
+status: 3
+tags: []
+user_id: Yann

@@ -21,6 +21,7 @@ class ID_client(BaseModel):
 app = FastAPI()
 @app.post("/invocations")
 def operate(input:ID_client):
+    """Appel des datas du client choisi pour retourner la probabilité"""
     client_choice = input.client_choice
     data_client = echantillon_clients.loc[echantillon_clients.index == client_choice]
     proba = perfect_model.predict_proba(data_client)[0][1]

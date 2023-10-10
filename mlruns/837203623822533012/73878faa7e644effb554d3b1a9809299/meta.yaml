@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/837203623822533012/73878faa7e644effb554d3b1a9809299/artifacts
+end_time: 1696416350506
+entry_point_name: ''
+experiment_id: '837203623822533012'
+lifecycle_stage: active
+run_id: 73878faa7e644effb554d3b1a9809299
+run_name: dashing-deer-518
+run_uuid: 73878faa7e644effb554d3b1a9809299
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696416101868
+status: 3
+tags: []
+user_id: Yann

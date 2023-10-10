@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/218a2d4a78024158a7cf3d2f9e6246a5/artifacts
+deleted_time: 1694616315905
+end_time: 1694615068923
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 218a2d4a78024158a7cf3d2f9e6246a5
+run_name: victorious-ray-588
+run_uuid: 218a2d4a78024158a7cf3d2f9e6246a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694614880981
+status: 3
+tags: []
+user_id: Yann

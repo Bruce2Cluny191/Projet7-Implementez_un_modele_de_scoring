@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/890f2c7c7e104f2b8a617b30f72f41d5/artifacts
+end_time: 1696287944783
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 890f2c7c7e104f2b8a617b30f72f41d5
+run_name: capable-snipe-112
+run_uuid: 890f2c7c7e104f2b8a617b30f72f41d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696287695332
+status: 3
+tags: []
+user_id: Yann

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/570802d9a2a44963a32d2ba265c89e3a/artifacts
+end_time: 1696276441732
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 570802d9a2a44963a32d2ba265c89e3a
+run_name: persistent-bat-686
+run_uuid: 570802d9a2a44963a32d2ba265c89e3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696273191376
+status: 3
+tags: []
+user_id: Yann

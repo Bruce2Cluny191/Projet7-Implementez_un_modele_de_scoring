@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/1884f608f365405083440ee381f9be3d/artifacts
+deleted_time: 1694642482475
+end_time: 1694642157549
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 1884f608f365405083440ee381f9be3d
+run_name: carefree-sow-448
+run_uuid: 1884f608f365405083440ee381f9be3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694641083013
+status: 4
+tags: []
+user_id: Yann

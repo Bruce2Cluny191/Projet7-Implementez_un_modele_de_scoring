@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/1e5506ce97e943cf9cdee7d12b036fd4/artifacts
+deleted_time: 1696272928350
+end_time: null
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 1e5506ce97e943cf9cdee7d12b036fd4
+run_name: abrasive-goat-796
+run_uuid: 1e5506ce97e943cf9cdee7d12b036fd4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696272842959
+status: 1
+tags: []
+user_id: Yann

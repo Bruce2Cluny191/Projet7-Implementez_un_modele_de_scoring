@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/3590f9cb8ba2475eaad8daf33ce1805c/artifacts
+end_time: 1694704392450
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 3590f9cb8ba2475eaad8daf33ce1805c
+run_name: skillful-turtle-662
+run_uuid: 3590f9cb8ba2475eaad8daf33ce1805c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694701447814
+status: 3
+tags: []
+user_id: Yann

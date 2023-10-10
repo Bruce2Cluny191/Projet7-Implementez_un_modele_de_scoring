@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/978ab152d36b4f31b721c764d43b3e87/artifacts
+end_time: 1694762290799
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 978ab152d36b4f31b721c764d43b3e87
+run_name: burly-quail-746
+run_uuid: 978ab152d36b4f31b721c764d43b3e87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694759381489
+status: 3
+tags: []
+user_id: Yann

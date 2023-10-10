@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/96595562d8d04d6999371e29a449d902/artifacts
+deleted_time: 1694616315905
+end_time: 1694615978258
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 96595562d8d04d6999371e29a449d902
+run_name: skillful-sponge-768
+run_uuid: 96595562d8d04d6999371e29a449d902
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694615864888
+status: 3
+tags: []
+user_id: Yann

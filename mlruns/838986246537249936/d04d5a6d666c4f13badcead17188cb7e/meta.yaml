@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/d04d5a6d666c4f13badcead17188cb7e/artifacts
+end_time: 1696097879509
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: d04d5a6d666c4f13badcead17188cb7e
+run_name: youthful-swan-435
+run_uuid: d04d5a6d666c4f13badcead17188cb7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696096758684
+status: 3
+tags: []
+user_id: Yann

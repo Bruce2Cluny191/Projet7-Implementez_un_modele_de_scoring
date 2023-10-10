@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/dbc5b53286344de6b21da433f4543683/artifacts
+end_time: 1694708418742
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: dbc5b53286344de6b21da433f4543683
+run_name: caring-zebra-778
+run_uuid: dbc5b53286344de6b21da433f4543683
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694705307594
+status: 3
+tags: []
+user_id: Yann

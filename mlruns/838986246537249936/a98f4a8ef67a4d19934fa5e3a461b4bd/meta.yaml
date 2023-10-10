@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/a98f4a8ef67a4d19934fa5e3a461b4bd/artifacts
+deleted_time: 1694615644798
+end_time: 1694614573414
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: a98f4a8ef67a4d19934fa5e3a461b4bd
+run_name: languid-panda-128
+run_uuid: a98f4a8ef67a4d19934fa5e3a461b4bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694614442756
+status: 4
+tags: []
+user_id: Yann

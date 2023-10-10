@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/3aa7c4cfa0524c1fae0ab4909d2587ef/artifacts
+end_time: 1694676645086
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 3aa7c4cfa0524c1fae0ab4909d2587ef
+run_name: victorious-shark-727
+run_uuid: 3aa7c4cfa0524c1fae0ab4909d2587ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694674260350
+status: 3
+tags: []
+user_id: Yann

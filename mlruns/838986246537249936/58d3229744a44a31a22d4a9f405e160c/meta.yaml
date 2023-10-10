@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/58d3229744a44a31a22d4a9f405e160c/artifacts
+end_time: 1695400857696
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 58d3229744a44a31a22d4a9f405e160c
+run_name: mysterious-snail-348
+run_uuid: 58d3229744a44a31a22d4a9f405e160c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695397793418
+status: 3
+tags: []
+user_id: Yann

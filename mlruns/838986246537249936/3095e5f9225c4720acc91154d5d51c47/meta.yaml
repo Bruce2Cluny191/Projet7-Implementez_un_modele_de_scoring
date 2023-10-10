@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/3095e5f9225c4720acc91154d5d51c47/artifacts
+end_time: 1694698721759
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 3095e5f9225c4720acc91154d5d51c47
+run_name: bustling-bat-400
+run_uuid: 3095e5f9225c4720acc91154d5d51c47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694695852524
+status: 3
+tags: []
+user_id: Yann

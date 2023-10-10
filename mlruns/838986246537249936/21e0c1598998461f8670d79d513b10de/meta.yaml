@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/21e0c1598998461f8670d79d513b10de/artifacts
+end_time: 1696272501041
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 21e0c1598998461f8670d79d513b10de
+run_name: monumental-wolf-822
+run_uuid: 21e0c1598998461f8670d79d513b10de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696269303286
+status: 3
+tags: []
+user_id: Yann

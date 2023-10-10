@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/837203623822533012/dcb32aa95b1e4fd0944f381e97674054/artifacts
+end_time: 1696415306851
+entry_point_name: ''
+experiment_id: '837203623822533012'
+lifecycle_stage: active
+run_id: dcb32aa95b1e4fd0944f381e97674054
+run_name: mysterious-chimp-788
+run_uuid: dcb32aa95b1e4fd0944f381e97674054
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696415061256
+status: 3
+tags: []
+user_id: Yann

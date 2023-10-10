@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/2da40cb6d263461d8e53e9b767d22582/artifacts
+end_time: 1694891061755
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 2da40cb6d263461d8e53e9b767d22582
+run_name: tasteful-sheep-115
+run_uuid: 2da40cb6d263461d8e53e9b767d22582
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694888232802
+status: 3
+tags: []
+user_id: Yann

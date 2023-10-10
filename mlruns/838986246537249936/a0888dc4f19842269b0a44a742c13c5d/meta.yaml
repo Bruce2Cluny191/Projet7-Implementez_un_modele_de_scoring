@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/a0888dc4f19842269b0a44a742c13c5d/artifacts
+end_time: 1696245346734
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: a0888dc4f19842269b0a44a742c13c5d
+run_name: thundering-moose-566
+run_uuid: a0888dc4f19842269b0a44a742c13c5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696242394510
+status: 3
+tags: []
+user_id: Yann

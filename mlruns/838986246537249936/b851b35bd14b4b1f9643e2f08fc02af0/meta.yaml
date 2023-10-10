@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/b851b35bd14b4b1f9643e2f08fc02af0/artifacts
+end_time: 1694646277026
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: b851b35bd14b4b1f9643e2f08fc02af0
+run_name: bemused-gull-578
+run_uuid: b851b35bd14b4b1f9643e2f08fc02af0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694643556461
+status: 3
+tags: []
+user_id: Yann

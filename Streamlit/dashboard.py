@@ -37,6 +37,11 @@ list_index = echantillon_clients.index.tolist()
 # End-point de l'API
 URI = "https://scoring-client-6cc83c15008a.herokuapp.com/invocations"
 def main():
+    """Programme principal pour sélectionner un client puis afficher les informations :
+    - jauge d'acceptation/refus
+    - interprétabilité locale
+    - interprétabilité globale
+    - position du client sur la distribution des features selon le statut des clients historiques"""
 
     # Choix de l'id client par le chargé de relation client
     client_choice = st.sidebar.selectbox(

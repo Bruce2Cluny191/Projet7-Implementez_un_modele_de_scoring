@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/0325ccb75a1a4eb6910a32ee7e014c41/artifacts
+deleted_time: 1696415287389
+end_time: 1696287478134
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 0325ccb75a1a4eb6910a32ee7e014c41
+run_name: fortunate-sheep-67
+run_uuid: 0325ccb75a1a4eb6910a32ee7e014c41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696287241803
+status: 3
+tags: []
+user_id: Yann

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/66a1503fbc11434395c5db9c27cd2118/artifacts
+end_time: 1696255599838
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 66a1503fbc11434395c5db9c27cd2118
+run_name: able-zebra-417
+run_uuid: 66a1503fbc11434395c5db9c27cd2118
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696252617768
+status: 3
+tags: []
+user_id: Yann

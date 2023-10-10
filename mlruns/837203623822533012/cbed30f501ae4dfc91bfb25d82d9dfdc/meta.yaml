@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/837203623822533012/cbed30f501ae4dfc91bfb25d82d9dfdc/artifacts
+end_time: 1696415599856
+entry_point_name: ''
+experiment_id: '837203623822533012'
+lifecycle_stage: active
+run_id: cbed30f501ae4dfc91bfb25d82d9dfdc
+run_name: unique-mink-878
+run_uuid: cbed30f501ae4dfc91bfb25d82d9dfdc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696415364566
+status: 3
+tags: []
+user_id: Yann

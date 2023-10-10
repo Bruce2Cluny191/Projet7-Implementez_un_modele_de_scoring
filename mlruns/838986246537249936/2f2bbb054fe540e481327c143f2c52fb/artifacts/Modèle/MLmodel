@@ -1,0 +1,19 @@
+artifact_path: "Mod\xE8le"
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.6.0
+model_uuid: 92436bba6c044a52a650684d811a50a3
+run_id: 2f2bbb054fe540e481327c143f2c52fb
+utc_time_created: '2023-09-13 18:01:40.543626'

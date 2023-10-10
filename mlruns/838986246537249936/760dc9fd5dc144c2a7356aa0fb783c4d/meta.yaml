@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/760dc9fd5dc144c2a7356aa0fb783c4d/artifacts
+end_time: 1696100019545
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 760dc9fd5dc144c2a7356aa0fb783c4d
+run_name: kindly-frog-746
+run_uuid: 760dc9fd5dc144c2a7356aa0fb783c4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696098708100
+status: 3
+tags: []
+user_id: Yann

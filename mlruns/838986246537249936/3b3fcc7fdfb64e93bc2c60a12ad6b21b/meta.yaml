@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/3b3fcc7fdfb64e93bc2c60a12ad6b21b/artifacts
+deleted_time: 1696243382368
+end_time: 1696242367696
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 3b3fcc7fdfb64e93bc2c60a12ad6b21b
+run_name: whimsical-hare-67
+run_uuid: 3b3fcc7fdfb64e93bc2c60a12ad6b21b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696242367696
+status: 4
+tags: []
+user_id: Yann

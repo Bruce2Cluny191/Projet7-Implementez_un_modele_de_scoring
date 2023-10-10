@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/23e5c07f8bc84aaf8f01b135c934acd9/artifacts
+end_time: 1694680379670
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 23e5c07f8bc84aaf8f01b135c934acd9
+run_name: honorable-sponge-916
+run_uuid: 23e5c07f8bc84aaf8f01b135c934acd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694677317510
+status: 3
+tags: []
+user_id: Yann

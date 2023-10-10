@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/837203623822533012/d622cfd4fcd44b2fa269a38247fd44c6/artifacts
+end_time: 1696669038978
+entry_point_name: ''
+experiment_id: '837203623822533012'
+lifecycle_stage: active
+run_id: d622cfd4fcd44b2fa269a38247fd44c6
+run_name: bald-jay-201
+run_uuid: d622cfd4fcd44b2fa269a38247fd44c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696668750925
+status: 3
+tags: []
+user_id: Yann

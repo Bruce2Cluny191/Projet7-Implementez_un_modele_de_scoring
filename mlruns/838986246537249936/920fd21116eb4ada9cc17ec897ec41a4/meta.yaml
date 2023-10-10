@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/920fd21116eb4ada9cc17ec897ec41a4/artifacts
+end_time: 1696281760494
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 920fd21116eb4ada9cc17ec897ec41a4
+run_name: painted-pug-310
+run_uuid: 920fd21116eb4ada9cc17ec897ec41a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696278283217
+status: 3
+tags: []
+user_id: Yann

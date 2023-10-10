@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/81b59438219b466ab81f220fc1b86a52/artifacts
+deleted_time: 1694615644797
+end_time: 1694614675569
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 81b59438219b466ab81f220fc1b86a52
+run_name: incongruous-seal-924
+run_uuid: 81b59438219b466ab81f220fc1b86a52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694614675523
+status: 4
+tags: []
+user_id: Yann

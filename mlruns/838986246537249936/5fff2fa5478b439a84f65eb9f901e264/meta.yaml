@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/5fff2fa5478b439a84f65eb9f901e264/artifacts
+deleted_time: 1694643401709
+end_time: 1694643378358
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: deleted
+run_id: 5fff2fa5478b439a84f65eb9f901e264
+run_name: upbeat-donkey-599
+run_uuid: 5fff2fa5478b439a84f65eb9f901e264
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694643105598
+status: 4
+tags: []
+user_id: Yann

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/2f2bbb054fe540e481327c143f2c52fb/artifacts
+end_time: 1694628104177
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 2f2bbb054fe540e481327c143f2c52fb
+run_name: tasteful-mink-526
+run_uuid: 2f2bbb054fe540e481327c143f2c52fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694624008896
+status: 3
+tags: []
+user_id: Yann

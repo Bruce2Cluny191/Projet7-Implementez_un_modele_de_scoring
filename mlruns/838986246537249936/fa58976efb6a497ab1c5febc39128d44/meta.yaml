@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/fa58976efb6a497ab1c5febc39128d44/artifacts
+end_time: 1694805596996
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: fa58976efb6a497ab1c5febc39128d44
+run_name: mysterious-ram-848
+run_uuid: fa58976efb6a497ab1c5febc39128d44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694802694518
+status: 3
+tags: []
+user_id: Yann

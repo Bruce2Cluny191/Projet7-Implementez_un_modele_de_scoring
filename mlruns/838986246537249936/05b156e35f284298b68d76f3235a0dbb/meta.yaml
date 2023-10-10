@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/05b156e35f284298b68d76f3235a0dbb/artifacts
+end_time: 1694901607328
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 05b156e35f284298b68d76f3235a0dbb
+run_name: redolent-sow-803
+run_uuid: 05b156e35f284298b68d76f3235a0dbb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694898689442
+status: 3
+tags: []
+user_id: Yann

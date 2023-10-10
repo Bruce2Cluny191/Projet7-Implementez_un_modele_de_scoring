@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Yann/Documents/Projet7-Implementez_un_modele_de_scoring/mlruns/838986246537249936/79bf882901cf4b0f9543a04c701eb270/artifacts
+end_time: 1694690173932
+entry_point_name: ''
+experiment_id: '838986246537249936'
+lifecycle_stage: active
+run_id: 79bf882901cf4b0f9543a04c701eb270
+run_name: grandiose-dog-128
+run_uuid: 79bf882901cf4b0f9543a04c701eb270
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694687119898
+status: 3
+tags: []
+user_id: Yann
