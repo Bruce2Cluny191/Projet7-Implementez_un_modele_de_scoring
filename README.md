@@ -24,7 +24,7 @@ Une recherche d'hyperparamètres - via **GridSearchCV** - définit le meilleur d
 
 Il est ensuite optimisé à l'aide d'une recherche plus poussée - via **RandomSearchCV** et l'outil de **tracking** des runs d'expérience de **MLFlow** - des meilleurs hyperparamètres.
 
-Pour optimiser encore plus le modèle et la balance entre les _faux négatifs_ (manque à gagner) et les _faux positifs_ qui coûtent 10 fois plus chers, le **meilleur score métier** est recherché en fonction du **seuil de décision** (_treshold_). Celui-ci est légèrement différent du seuil de 0,5 de base.
+Pour optimiser encore plus le modèle et la balance entre les _faux négatifs_ (manque à gagner) et les _faux positifs_ qui coûtent 10 fois plus chers, le **meilleur score métier** est recherché en fonction du **seuil de décision** (_threshold_). Celui-ci est légèrement différent du seuil de 0,5 de base.
 
 2. **API**
 
@@ -42,7 +42,7 @@ Il permet de choisir un client depuis la sidebar. Les informations principales d
 
 En même temps, les données de ce client sont transmises à l'API qui renvoit la probabilité de défaut.
 
-Dès lors, il est possible d'afficher le résultat de cette probabilité sur une jauge permettant de juger la décision d'octroi ou non du prêt et aussi l'éloignement relatif au point de bascule, défini par le treshold.
+Dès lors, il est possible d'afficher le résultat de cette probabilité sur une jauge permettant de juger la décision d'octroi ou non du prêt et aussi l'éloignement relatif au point de bascule, défini par le threshold.
 
 Il est aussi possible, optionnellement à l'aide de cases à cocher, d'afficher :
 * les features les plus déterminantes dans la décision d'acceptation ou refus,
