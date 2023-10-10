@@ -38,6 +38,8 @@ Il peut être testé : [ici](https://scoring-client-6cc83c15008a.herokuapp.com/d
 
 Le dashboard est fourni par le code de [Streamlit/dashboard.py](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/Streamlit/dashboard.py).
 
+Il est aussi hébergé sur Heroku : [là](https://projet7-streamlit-0378b54f553f.herokuapp.com/).
+
 Il permet de choisir un client depuis la sidebar. Les informations principales du client s'affichent sous le choix de client.
 
 En même temps, les données de ce client sont transmises à l'API qui renvoit la probabilité de défaut.
