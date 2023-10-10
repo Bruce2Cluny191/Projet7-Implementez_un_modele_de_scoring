@@ -32,6 +32,7 @@ Le modèle optimisé est sérialisé afin d'être déployé à l'aide d'une API.
 Le code fourni par le fichier [app.py](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/app.py) est hébergé sur **Heroku**.
 
 Il peut être testé : [ici](https://scoring-client-6cc83c15008a.herokuapp.com/docs).
+
 3. **Dashboard**
 
 Le dashboard est fourni par le code de [Streamlit/dashboard.py](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/Streamlit/dashboard.py).
@@ -53,6 +54,7 @@ L'analyse du **datadrift** potentiel est effectué à l'aide de la bibliothèque
 
 Le code est proposé par le fichier [datadrift.ipynb](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/datadrift.ipynb).
 Le rapport complet est disponible au format html : [data_drift_report.html](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/data_drift_report.html)
+
 5. **Packages utilisés**
 
 Listes des environnements nécessaires au bon fonctionnement des notebook et scripts :
