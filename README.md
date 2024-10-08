@@ -61,9 +61,11 @@
 
 ## Livrables
 
-- Un dossier contenant le code de la modélisation, le dashboard, et l'API.
-- Un tableau HTML d’analyse de data drift.
-- Une note méthodologique décrivant la démarche de modélisation, le traitement du déséquilibre des classes, et l'analyse du data drift.
-- Un support de présentation pour la soutenance.
+- [Pham-Van_Yann_2_dossier_code_102023](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/tree/main/Pham-Van_Yann_2_dossier_code_102023) : Un dossier contenant le code de la modélisation, le dashboard, et l'API.
+- [Pham-Van_Yann_2_dossier_code_102023/data_drift_report.html](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/Pham-Van_Yann_2_dossier_code_102023/data_drift_report.html) : Un tableau HTML d’analyse de data drift.
+- [Pham-Van_Yann_3_note_methodologique_102023.pdf](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/Pham-Van_Yann_3_note_methodologique_102023.pdf) : Une note méthodologique décrivant la démarche de modélisation, le traitement du déséquilibre des classes, et l'analyse du data drift.
+- [Pham-Van_Yann_4_presentation_102023.pdf](https://github.com/Bruce2Cluny191/Projet7-Implementez_un_modele_de_scoring/blob/main/Pham-Van_Yann_4_presentation_102023.pdf) : Un support de présentation pour la soutenance.
 
-Pour toute question ou besoin d'informations supplémentaires, n'hésitez pas à me contacter.
+## Contact
+
+Pour toute question, veuillez me contacter sur [LinkedIn](https://www.linkedin.com/in/chasseur2valeurs/).
