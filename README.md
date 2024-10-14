@@ -1,5 +1,7 @@
 # Implémentation d'un Modèle de Scoring pour "Prêt à Dépenser"
 
+<img src="https://user.oc-static.com/upload/2019/02/25/15510866018677_logo%20projet%20fintech.png" />
+
 ## Contexte
 
 "Prêt à Dépenser" est une société financière spécialisée dans les crédits à la consommation pour des personnes ayant peu ou pas d'historique de prêt. L'entreprise souhaite développer un outil de scoring crédit pour calculer la probabilité qu’un client rembourse son crédit, en s'appuyant sur des données variées (comportementales, institutionnelles, etc.). En réponse à la demande croissante de transparence, un dashboard interactif sera créé pour expliquer les décisions d’octroi de crédit.
